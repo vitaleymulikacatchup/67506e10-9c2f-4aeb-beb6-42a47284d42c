@@ -28,7 +28,7 @@ export default function RootLayout({
     <html lang="en">
       <body
         className={`${interTight.variable} ${playfairDisplay.variable} antialiased`} 
-        style="background: linear-gradient(135deg, #ffffff 0%, #fff6d1 100%)"
+        style={{ background: 'linear-gradient(135deg, #ffffff 0%, #fff6d1 100%)' }}
       >
         {children}
       </body>
