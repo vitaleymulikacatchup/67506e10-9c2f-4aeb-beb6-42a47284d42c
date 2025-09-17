@@ -6,6 +6,7 @@ import CtaAbout from '@/components/sections/layouts/about/CtaAbout';
 import HowToBuy3D from '@/components/sections/layouts/howtobuy/3DHTB';
 import BigNumberTokenomics from '@/components/sections/layouts/tokenomics/BigNumberTokenomics';
 import FooterLogoEmphasisBackgroundGradient from '@/components/footer/FooterLogoEmphasisBackgroundGradient';
+import { Star, Shield, Percent } from 'lucide-react';
 
 export default function Home() {
   return (
@@ -56,9 +57,9 @@ export default function Home() {
           title="Tokenomics Overview"
           description="Key metrics and stats of our token."
           kpiItems={[
-            { value: '100K', description: 'Total Supply', longDescription: 'Total number of tokens available.', icon: { } },
-            { value: '50K', description: 'Circulating Supply', longDescription: 'Tokens currently in circulation.', icon: { } },
-            { value: '$1.50', description: 'Current Price', longDescription: 'Market price per token.', icon: { } }
+            { value: '100K', description: 'Total Supply', longDescription: 'Total number of tokens available.', icon: Shield },
+            { value: '50K', description: 'Circulating Supply', longDescription: 'Tokens currently in circulation.', icon: Percent },
+            { value: '$1.50', description: 'Current Price', longDescription: 'Market price per token.', icon: Star }
           ]}
         />
       </div>
