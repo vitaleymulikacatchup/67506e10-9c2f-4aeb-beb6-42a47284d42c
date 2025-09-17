@@ -1,4 +1,4 @@
-use client
+"use client";
 import { SiteThemeProvider } from '@/components/sections/ThemeProvider';
 import NavbarLayoutFloatingOverlay from '@/components/navigation/NavbarLayoutFloatingOverlay/NavbarLayoutFloatingOverlay';
 import BillboardHero from '@/components/sections/layouts/hero/BillboardHero';
@@ -9,18 +9,18 @@ import FooterLogoEmphasisBackgroundGradient from '@/components/footer/FooterLogo
 
 export default function Home() {
   return (
-    <SiteThemeProvider theme={{ styleVariant: "funAndTrendy", colorTemplate: 1, textAnimation: "highlight" }}>
+    <SiteThemeProvider theme={{ styleVariant: 'funAndTrendy', colorTemplate: 1, textAnimation: 'highlight' }}>
       <div id="nav" data-section="nav">
         <NavbarLayoutFloatingOverlay
           logoSrc="/images/logo.svg"
           logoWidth={100}
           logoHeight={40}
           navItems={[
-            { name: "Hero", id: "hero" },
-            { name: "About", id: "about" },
-            { name: "How to Buy", id: "how-to-buy" },
-            { name: "Tokenomics", id: "tokenomics" },
-            { name: "Footer", id: "footer" },
+            { name: 'Hero', id: 'hero' },
+            { name: 'About', id: 'about' },
+            { name: 'How to Buy', id: 'how-to-buy' },
+            { name: 'Tokenomics', id: 'tokenomics' },
+            { name: 'Footer', id: 'footer' },
           ]}
           buttonText="Start planning"
           onButtonClick={() => {}}
@@ -36,8 +36,8 @@ export default function Home() {
         <CtaAbout
           title="About PlanPage"
           descriptions={[
-            "PlanPage is designed to simplify your planning process.",
-            "We focus on user friendliness and efficiency."
+            'PlanPage is designed to simplify your planning process.',
+            'We focus on user friendliness and efficiency.'
           ]}
         />
       </div>
@@ -45,9 +45,9 @@ export default function Home() {
         <HowToBuy3D
           title="How to Start"
           steps={[
-            { title: "Step 1", description: "Create an account", image: "/images/placeholder1.avif", position: "left", isCenter: false },
-            { title: "Step 2", description: "Choose your plan", image: "/images/placeholder2.avif", position: "center", isCenter: true },
-            { title: "Step 3", description: "Begin planning!", image: "/images/placeholder3.avif", position: "right", isCenter: false }
+            { title: 'Step 1', description: 'Create an account', image: '/images/placeholder1.avif', position: 'left', isCenter: false },
+            { title: 'Step 2', description: 'Choose your plan', image: '/images/placeholder2.avif', position: 'center', isCenter: true },
+            { title: 'Step 3', description: 'Begin planning!', image: '/images/placeholder3.avif', position: 'right', isCenter: false }
           ]}
         />
       </div>
@@ -56,9 +56,9 @@ export default function Home() {
           title="Tokenomics Overview"
           description="Key metrics and stats of our token."
           kpiItems={[
-            { value: "100K", description: "Total Supply", longDescription: "Total number of tokens available.", icon: LucideIcon },
-            { value: "50K", description: "Circulating Supply", longDescription: "Tokens currently in circulation.", icon: LucideIcon },
-            { value: "$1.50", description: "Current Price", longDescription: "Market price per token.", icon: LucideIcon }
+            { value: '100K', description: 'Total Supply', longDescription: 'Total number of tokens available.', icon: { } },
+            { value: '50K', description: 'Circulating Supply', longDescription: 'Tokens currently in circulation.', icon: { } },
+            { value: '$1.50', description: 'Current Price', longDescription: 'Market price per token.', icon: { } }
           ]}
         />
       </div>
@@ -68,9 +68,9 @@ export default function Home() {
           logoAlt="PlanPage Logo"
           logoText="PlanPage"
           items={[
-            { label: "Privacy Policy", onClick: () => {} },
-            { label: "Terms of Service", onClick: () => {} },
-            { label: "Help", onClick: () => {} }
+            { label: 'Privacy Policy', onClick: () => {} },
+            { label: 'Terms of Service', onClick: () => {} },
+            { label: 'Help', onClick: () => {} }
           ]}
           className="bg-opacity-50"
           containerClassName="py-10"
